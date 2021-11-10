@@ -6,6 +6,14 @@ public class Grupo {
     Persona profesor;
     Asignatura asignatura;
     int codigo = 0;
+package classroom;
+
+public class Grupo {
+
+    Persona[] estudiantes;
+    Persona profesor;
+    Asignatura asignatura;
+    int codigo = 0; 
     String horario;
 
     Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
@@ -17,9 +25,8 @@ public class Grupo {
     }
 
     Grupo(int cantidadEstudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
-    	this(new Persona[0], profesor, asignatura, codigo, horario);
-    	this.estudiantes = new Persona[cantidadEstudiantes];
-        
+        this(new Persona[0], profesor, asignatura, codigo, horario);
+        this.estudiantes = new Persona[cantidadEstudiantes];
     }
 
     Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura) {
